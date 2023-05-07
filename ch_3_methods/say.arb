@@ -1,0 +1,10 @@
+# This is a book exercise from the "What Are Methods and Why Do We Need Them?" section
+
+def say(words='hello')
+  puts words + '.'
+end
+
+say()
+say("hi")
+say("how are you") 
+say("I'm fine")
