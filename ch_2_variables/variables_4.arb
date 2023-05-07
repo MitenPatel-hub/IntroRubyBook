@@ -1,0 +1,49 @@
+# Intro to Ruby Book - Ch 2 - Variables - Exercise 4
+
+=begin
+Modify name.rb again so that it first asks the user for their first name, saves it into a variable, and then does the same for the last name. 
+Then outputs their full name all at once.
+Instead of modifying variables_1.arb, I am copying the code from that file into this file to keep the exercises better organized for my learning purposes.
+=end
+
+puts "What is your first name?"
+first_name = gets.chomp 
+puts "What is your last name?"
+last_name = gets.chomp
+puts "Hello #{first_name} #{last_name}, how are you doing today?"
+
+
+=begin
+
+Model Solution:
+
+puts "What is your first name?"
+first_name = gets.chomp 
+puts "What is your last name?"
+last_name = gets.chomp
+puts "Great. So your full name is " + first_name + " " + last_name
+
+Rewriting last line of my solution using the same style of concatenation as model solution:
+
+puts "Hello " + first_name + " " + last_name + ", how are you doing today?"
+
+Solutions Comparison:
+
+1. My solution uses string interpolation (#{first_name} #{last_name}) to combine the first name, last name, and the greeting string.
+This is considered more idiomatic and readable in Ruby than concatenating strings with the + operator.
+
+2. The model solution style of using the + operator to concatenate strings can also create additional temporary strings in memory.
+This might have an impact on performance in cases where concatenation is done extensively in the program's run.
+
+I prefer my solution because the use of string interpolation makes it more idiomatic and readable. 
+While both solutions are good, my solution adheres more to language conventions and best practices for Ruby.
+This is important for maintainability and collaboration with other Ruby developers.
+
+=end
+
+
+
+
+
+
+

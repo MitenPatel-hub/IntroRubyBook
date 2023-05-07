@@ -1,0 +1,65 @@
+# Intro to Ruby Book - Ch 2 - Variables - Exercise 2
+
+=begin
+Write a program called age.rb that asks a user how old they are and then tells them how old they will be in 10, 20, 30 and 40 years. 
+Below is the output for someone 20 years old.
+I am naming the program variables_2.arb so that I do not need to create a new ruby file to complete the exercise.
+=end
+
+# My Solution:
+puts "What is your age?"
+age = gets.chomp.to_i
+plus_ten = age + 10
+plus_twenty = age + 20
+plus_thirty = age + 30
+plus_forty = age + 40
+puts "In 10 years you will be: #{plus_ten}"
+puts "In 20 years you will be: #{plus_twenty}"
+puts "In 30 years you will be: #{plus_thirty}"
+puts "In 40 years you will be: #{plus_forty}"
+
+=begin
+# Model Solution:
+
+puts "How old are you? 20"
+age = gets.chomp.to_i
+puts "In 10 years you will be:"
+puts age +  10
+puts "In 20 years you will be:"
+puts age +  20
+puts "In 30 years you will be:"
+puts age +  30
+puts "In 40 years you will be:"
+puts age +  40
+=end
+
+=begin
+The model solution is different than mine because it does not rely on creating extra local variables, instead using more puts statements.
+However, I think my solution might be superior because:
+
+1. My solution stores the age values in variables (plus_ten, plus_twenty, plus_thirty, plus_forty). 
+This makes the code more readable and maintainable, as it's easier to understand what each value represents.
+
+2. My soluton combines the string and age values using string interpolation.
+This is more idiomatic in Ruby than using separate puts statements for each value.
+"Idiomatic" means the code conforms to Ruby style guidelines/best practices/conventions. 
+Idiomatic code is considered easier to read, understand, and maintain by other Ruby devs.
+Specifically, string interpolation is a common and preferred way to combine variables with strings in the Ruby. 
+String interpolation adheres to the language's conventions and style guidelines.
+This makes it more recognizable and easier to work with for Ruby devs.
+
+3. The model solution repeats the same pattern of puts statements multiple times.
+This is less DRY (Don't Repeat Yourself) compared to my solution.
+
+4. The model solution soes not use string interpolation, which makes it less idiomatic in Ruby.
+
+5. My solution is more reusable because:
+
+a. Readability: My solution is more readbale.
+Readable code tends to be more reusable because other developers can quickly grasp its purpose and adapt it to their needs.
+
+b. Variables: My solution stores the age values in variables. 
+This makes it easier to reuse or manipulate them later in the code if needed. 
+Model solution directly prints the age values, which makes it more difficult to reuse or manipulate them in other parts of the code.
+
+=end

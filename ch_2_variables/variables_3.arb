@@ -1,0 +1,45 @@
+# Intro to Ruby Book - Ch 2 - Variables - Exercise 3
+
+=begin
+Add another section onto name.rb that prints the name of the user 10 times. 
+You must do this without explicitly writing the puts method 10 times in a row. 
+Hint: you can use the times method to do something repeatedly
+I am copying the code from variables_1.arb into this file to keep the exercises better organized for my learning purposes.
+=end
+
+puts "What is your name?"
+name = gets.chomp 
+puts "Hello #{name}, how are you doing today?"
+10.times { puts name }
+
+=begin
+
+Model solution:
+
+10.times do
+  puts name
+end
+
+=end
+
+=begin
+
+Solutions Comparison:
+
+They both look like concise, idiomatic solutions.
+
+1. My solution uses a single line block with curly braces {} to define the loop. 
+This is more concise and is considered idiomatic when the block contains only one line of code.
+2. My solution takes up fewer lines of code.
+This can be an advantage in terms of readability when dealing with simple, short blocks.
+3. Model solution uses the do...end syntax for the block.
+This is generally preferred when dealing with multi-line blocks.
+However, in this case, the block only contains one line of code, so the difference in style is minimal.
+4. Model solution takes up more lines of code than Solution 1.
+Still, the difference is not significant for this particular problem.
+5. Both are great solutions. 
+
+I may be biased but I slightly prefer my solution.
+It is more concise while still maintaining readability.
+
+=end

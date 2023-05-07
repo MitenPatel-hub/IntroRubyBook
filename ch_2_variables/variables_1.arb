@@ -1,0 +1,21 @@
+# Intro to Ruby Book - Ch 2 - Variables - Exercise 1
+
+# Write a program called name.rb that asks the user to type in their name and then prints out a greeting message with their name included.
+# I am calling the program variables_1.arb so that I do not have to create a separate ruby file to do this exercise.
+
+puts "What is your name?"
+name = gets.chomp 
+puts "Hello #{name}, how are you doing today?"
+
+=begin
+The above is my solution. 
+The below solution is a modified version of the above solution that would be more in line with the model answer.
+The change reflects a different concatenation approach than the one I used.
+Personally, I think my solution is cleaner.
+=end
+
+=begin
+# Model solution:
+
+puts "Hello " + name + ", how are you doing today?"
+=end
