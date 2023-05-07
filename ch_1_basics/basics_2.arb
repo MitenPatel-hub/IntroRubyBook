@@ -1,0 +1,17 @@
+# My solution for Exercise 2 for Intro to Ruby - Basics Chapter
+
+# Use the modulo operator, division, or a combination of both to take a 4 digit number and find the digit in the: 1) thousands place 2) hundreds place 3) tens place 4) ones place
+
+thousands = 5213 / 1000 
+hundreds = 5213 % 1000 / 100
+tens = 5213 % 1000 % 100 / 10
+ones = 5213 % 1000 % 10
+
+# As we see in the video solution, for future problems like this remember that we can group 10s and 1s in modulo operations with larger numbers without needing to use intermediary operands like we did with 1000 in lines 3 and 4 of this code block.
+
+# Stop forgetting to bring conclusion to the answer by creating variables and then outputting the results with the `puts #{variable_name}` command!!! Look below to see how.
+
+puts "thousands: #{thousands}"
+puts "hundreds: #{hundreds}"
+puts "tens: #{tens}"
+puts "ones: #{ones}"

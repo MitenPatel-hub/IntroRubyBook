@@ -1,0 +1,21 @@
+# My solution for Exercise 3 for Intro to Ruby - Basics Chapter
+
+=begin
+Write a program that uses a hash to store a list of movie titles with the year they came out. 
+Then use the puts command to make your program print out the year of each movie to the screen. 
+=end
+
+movies = { hercules: 1997, mulan: 1998, tarzan: 1999, fantasia: 1940, bambi: 1942 }
+
+puts movies[:hercules]
+puts movies[:mulan]
+puts movies[:tarzan]
+puts movies[:fantasia]
+puts movies[:bambi]
+
+=begin
+The above is in line with the model solution. 
+However, I know from Codecademy that I can use the solution below with the .each method and passing a block with block variables to access the key-value pairs in the movies hash.
+=end
+
+movies.each { |x, y| puts y }

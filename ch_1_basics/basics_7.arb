@@ -1,0 +1,11 @@
+# My solution for Exercise 7 for Intro to Ruby - Basics chapter
+
+=begin
+What does the following error message tell you?
+
+SyntaxError: (irb):2: syntax error, unexpected ')', expecting '}'
+  from /usr/local/rvm/rubies/ruby-2.5.3/bin/irb:16:in `<main>'
+
+Answer: This error message is telling me that the interpreter can't run my ruby code because there is an error in its syntax from missing a closing curly brace bracket (`}`) in the code on line 2. 
+Based on the "unexpected ')'" language in the error message, my best guess would be that I mistakenly closed either a do-end block or hash block with a closing parenthesis instead of a closing curly brace bracket on line 2.
+=end

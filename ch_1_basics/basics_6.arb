@@ -1,0 +1,7 @@
+# My solution for Exercise 6 for Intro to Ruby - Basics chapter
+
+# Write a program that calculates the squares of 3 float numbers of your choosing and outputs the result to the screen.
+
+puts 6.92 ** 2
+puts 8.53 * 8.53
+puts 21.9 ** 2

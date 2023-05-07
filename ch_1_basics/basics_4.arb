@@ -1,0 +1,27 @@
+# My solution for Exercise 4 for Intro to Ruby - Basics Chapter
+
+=begin
+Use the dates from the previous example and store them in an array. 
+Then make your program output the same thing as exercise 3. 
+=end
+
+# I'm going to use the same movie dates from Exercise 3, but I'm going to store them in an array instead of a hash.
+
+movie_dates = [1997, 1998, 1999, 1940, 1942] # Initialize an array called dates and place each of the values from our hash as an element in this dates array.
+
+puts movie_dates[0]
+puts movie_dates[1]
+puts movie_dates[2]
+puts movie_dates[3]
+puts movie_dates[4]
+
+=begin
+The above is in line with the model solution. 
+We did this using array element reference, and we accessed the elements of movie_dates array using the element indexes.
+This is the same as accessing the values of a hash using the keys because the index values 0..4 are the default keys for the elements in the array.
+Syntactically, we use a pair of square brackets and pass in the indexes of the elements that we want to reference. 
+For incrementing Integers beginning with the zero-based index, remember that the last index of an array is always going to be one less than its size. 
+=end
+
+# However, I know from Codecademy that I can also write this more concisely as shown below.
+puts movie_dates
